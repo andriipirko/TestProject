@@ -1,0 +1,16 @@
+<mat-card>
+  <mat-card-content>
+    <div class="user-profile-picture">
+      <img src='assets/user.png'/>
+    </div>
+    <div class="user-profile-info">
+      <span>First name: {{user.firstName}}</span>
+      <span>Last name: {{user.lastName}}</span>
+      <span>Email: {{user.email}}</span>
+    </div>
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-raised-button *ngIf='showDeleteAction'>Delete</button>
+    <button mat-raised-button>Edit</button>
+  </mat-card-actions>
+</mat-card>

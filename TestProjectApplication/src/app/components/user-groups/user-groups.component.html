@@ -1,0 +1,11 @@
+<div class="action">
+  <button mat-raised-button (click)='createUserGroup()'>Create user group</button>
+</div>
+
+<app-user-group-card *ngFor='let userGroup of userGroups' [userGroup]='userGroup'
+    (edit)='editUserGroup($event)'
+    (delete)='deleteUserGroup($event)'>
+</app-user-group-card>
+
+<app-update-user-group *ngIf='editUserGroupMode' [userGroup]='selectedUserGroup'>
+</app-update-user-group>

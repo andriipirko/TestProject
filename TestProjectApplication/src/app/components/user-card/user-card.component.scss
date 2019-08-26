@@ -1,0 +1,26 @@
+:host {
+  mat-card {
+    width: 300px;
+    margin: 5px;
+
+    mat-card-content {
+      display: flex;
+      justify-content: center;
+      padding: 5px;
+    
+      .user-profile-picture {
+        img {
+          border-radius: 50%;
+        }
+        padding-right: 10px;
+      }
+    
+      .user-profile-info {
+        margin-top: 10px;
+        span {
+          display: block;
+        }
+      }
+    }
+  }
+}

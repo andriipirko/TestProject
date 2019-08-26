@@ -1,0 +1,30 @@
+:host {
+  mat-sidenav-container {
+    height: 90%;
+
+    .navigation-option {
+      padding: 5px 10px;
+      cursor: pointer;
+    }
+  }
+
+  footer {
+    width: 100vw;
+    height: 30px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+
+    div {
+      background-color: rgba(0, 0, 0, .4);
+      width: 80%;
+      height: 100%;
+      line-height: 30px;
+      text-align: center;
+    }
+  }
+}

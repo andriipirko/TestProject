@@ -1,0 +1,9 @@
+﻿{
+  "databaseConnectionString": "Data Source=localhost;Initial Catalog=TestApplicationDatabase;persist security info=True;user id=sa;password=www2603",
+  "AuthOptions": {
+    "issuer": "issuer",
+    "audience": "audience",
+    "secret": "SecretPassword12345",
+    "lifeTime": "15"
+  }
+}

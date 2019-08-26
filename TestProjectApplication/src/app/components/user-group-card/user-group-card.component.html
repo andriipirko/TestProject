@@ -1,0 +1,18 @@
+<mat-card>
+  <mat-card-header>
+    <mat-card-title>{{userGroup.name}}</mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    Users:
+    <mat-list>
+      <mat-list-item *ngFor="let user of userGroup.users">
+        <mat-icon mat-list-icon>account_circle</mat-icon>
+        <h4 mat-line>{{user.firstName}} {{user.lastName}}</h4>
+      </mat-list-item>
+    </mat-list>
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-button (click)='deleteUserGroup(userGroup.id)'>Delete</button>
+    <button mat-button (click)='editUserGroup(userGroup.id)'>Edit</button>
+  </mat-card-actions>
+</mat-card>
